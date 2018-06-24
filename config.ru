@@ -1,2 +1,2 @@
 require './proroom'
-run Proroom
+run Proroom.new
