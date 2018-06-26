@@ -14,9 +14,14 @@ GEM
     ffi (1.9.23)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
+    mail (2.7.0)
+      mini_mime (>= 0.1.1)
+    mini_mime (1.0.0)
     minitest (5.11.3)
     multi_json (1.13.1)
     mustermann (1.0.2)
+    pony (1.12)
+      mail (>= 2.0)
     rack (2.0.5)
     rack-protection (2.0.3)
       rack
@@ -59,6 +64,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  pony
   sass
   sinatra
   sinatra-contrib
