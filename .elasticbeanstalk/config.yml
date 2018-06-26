@@ -1,0 +1,23 @@
+branch-defaults:
+  master:
+    environment: Proroom-qa
+    group_suffix: null
+environment-defaults:
+  Proroom-qa:
+    branch: null
+    repository: null
+global:
+  application_name: proroom
+  branch: null
+  default_ec2_keyname: null
+  default_platform: arn:aws:elasticbeanstalk:eu-west-2::platform/Passenger with Ruby
+    2.5 running on 64bit Amazon Linux/2.8.0
+  default_region: eu-west-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  repository: null
+  sc: git
+  workspace_type: Application
