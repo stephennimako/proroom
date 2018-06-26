@@ -1,0 +1,17 @@
+version: 2
+jobs:
+  deploy:
+    docker:
+      - image: circleci/ruby:2.5.1
+    working_directory: ~/project
+    steps:
+      - checkout
+      - run:
+          name: Installing deployment dependencies
+          command: |
+            sudo apt-get -y -qq update
+            sudo apt-get install python-pip python-dev build-essential
+            sudo pip install awsebcli --upgrade
+      - run:
+          name: Deploying
+          command: eb deploy Proroom-qa
