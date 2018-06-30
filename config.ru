@@ -1,2 +1,7 @@
 require './proroom'
-run Proroom.new
+require './calculator'
+
+run Rack::URLMap.new({
+                         '/' => Proroom,
+                         '/calculator' => Calculator
+                     })

@@ -38,6 +38,8 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.3)
       tilt (~> 2.0)
+    sinatra-basic-auth (0.1.0)
+      sinatra
     sinatra-contrib (2.0.3)
       activesupport (>= 4.0.0)
       backports (>= 2.8.2)
@@ -67,6 +69,7 @@ DEPENDENCIES
   pony
   sass
   sinatra
+  sinatra-basic-auth
   sinatra-contrib
   sprockets
   thin

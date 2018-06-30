@@ -23,7 +23,7 @@ class Proroom < Sinatra::Base
     end
   end
 
-  assets.js_compressor  = :uglify
+  assets.js_compressor = :uglify
   assets.css_compressor = :scss
 
   get '/assets/*' do
