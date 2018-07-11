@@ -20,6 +20,12 @@
     &:hover {
       color: darken($primary, 10%);
     }
+    .logo-desktop {
+      display: none;
+    }
+    .logo-mobile {
+      display: block;
+    }
   }
   .navbar-nav {
     .nav-item {
@@ -40,33 +46,31 @@
 }
 @media(min-width:992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: $gray-900;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
     .navbar-brand {
-      font-size: 1.75em;
+      font-size: 1.25em;
+      padding: 12px 0;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
+      .logo-desktop {
+        display: block;
+      }
+      .logo-mobile {
+        display: none;
+      }
     }
     .navbar-nav {
       .nav-item {
         .nav-link {
           padding: 1.1em 1em !important;
         }
-      }
-    }
-    &.navbar-shrink {
-      padding-top: 0;
-      padding-bottom: 0;
-      background-color: $gray-900;
-      .navbar-brand {
-        font-size: 1.25em;
-        padding: 12px 0;
       }
     }
   }
