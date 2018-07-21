@@ -5,7 +5,7 @@ header.masthead {
   background-image: image-url('header-mobile.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: center top;
   @include background-cover;
   .intro-text {
     padding-top: 150px;
@@ -26,7 +26,32 @@ header.masthead {
     }
   }
 }
-@media(min-width:768px) {
+
+@media(min-width: 768px) {
+  header.masthead {
+    background-image: image-url('header-mobile.jpg');
+    .intro-text {
+      padding-top: 300px;
+      padding-bottom: 200px;
+      .intro-lead-in {
+        font-size: 36px;
+        font-style: italic;
+        line-height: 36px;
+        margin-bottom: 25px;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        margin-bottom: 50px;
+        @include heading-font;
+      }
+    }
+  }
+}
+
+@media(min-width:992px) {
   header.masthead {
     background-image: image-url('header.jpg');
     .intro-text {
