@@ -14,3 +14,6 @@ jobs:
       - run:
           name: Deploying
           command: eb deploy Proroom-qa
+    branches:
+          only:
+            - master
