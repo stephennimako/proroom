@@ -41,8 +41,8 @@ class Proroom < Sinatra::Base
 
   def send_email params
     Pony.mail({
-                  to: 'stephen.nimako@hotmail.co.uk',
-                  from: 'stephen.nimako@hotmail.co.uk',
+                  to: 'info@proroom.uk.com',
+                  from: 'info@proroom.uk.com',
                   subject: 'New client from Pro Room contact form',
                   body: erb(:'email.text', locals: params),
                   html_body: erb(:'email.html', locals: params),
